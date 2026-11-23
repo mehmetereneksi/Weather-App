@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="app-wrapper">
+      <section class="weather-card">
+        <div id="weather-content" class="hidden">
+          <div class="weather-header">
+            <h1 id="location"></h1>
+            <div class="weather-summary">
+              <p id="main-temperature"></p>
+              <div class="weather-condition">
+                <img id="weather-icon" src="" alt="" />
+                <span id="weather-main"></span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="weather-details">
+            <p>Humidity: <span id="humidity"></span></p>
+            <p>Feels Like: <span id="feels-like"></span></p>
+
+            <div class="wind-stats">
+              <p>Wind: <span id="wind"></span></p>
+              <p>Gusts: <span id="wind-gust"></span></p>
+            </div>
+
+            <div class="compass-wrapper">
+              <div class="compass">
+                <span class="tick north"></span>
+                <span class="tick east"></span>
+                <span class="tick south"></span>
+                <span class="tick west"></span>
+                <div id="wind-arrow" class="arrow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls-bar">
+        <label for="city-select" class="controls-label">Weather for:</label>
+        <div class="controls-actions">
+          <select id="city-select">
+            <option value=""></option>
+            <option value="new york">New York</option>
+            <option value="los angeles">Los Angeles</option>
+            <option value="chicago">Chicago</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="london">London</option>
+          </select>
+          <button id="get-weather-btn" type="button">Get Weather</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
